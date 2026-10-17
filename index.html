@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTB Auto | Achat, Vente & Échange de Véhicules à Douéra, Alger</title>
+    <meta name="description" content="GTB Automobile Douéra - Vente, achat et échange de véhicules neufs et d'occasion. Fiabilité, garantie et service haut de gamme 24h/24.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0A0B0D',
+                            dark: '#121418',
+                            card: '#1A1D24',
+                            border: '#2A2E39',
+                            gold: '#C5A059',
+                            goldHover: '#D4AF37',
+                            goldLight: 'rgba(197, 160, 89, 0.15)',
+                            gray: '#8E95A5',
+                            light: '#F3F4F6'
+                        }
+                    },
+                    fontFamily: {
+                        title: ['Cinzel', 'serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0A0B0D;
+            color: #E5E7EB;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism styling */
+        .glass-panel {
+            background: rgba(26, 29, 36, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 160, 89, 0.15);
+        }
+
+        .glass-nav {
+            background: rgba(10, 11, 13, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF0D0 0%, #C5A059 50%, #9A7B38 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Gold Gradient Border */
+        .gold-border-glow {
+            position: relative;
+        }
+        .gold-border-glow::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, rgba(197, 160, 89, 0.5), transparent, rgba(197, 160, 89, 0.2));
+            border-radius: inherit;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0B0D;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A2E39;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-black">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brand-dark border-b border-white/5 text-xs py-2 px-4 text-brand-gray">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-brand-gold font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Ouvert 24h/24 & 7j/7
+                </span>
+                <span class="hidden sm:inline-block text-white/20">|</span>
+                <span class="hidden sm:inline-flex items-center gap-1">
+                    <i class="fa-solid fa-location-dot text-brand-gold text-xs"></i> Douéra, Alger
+                </span>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="tel:0560509007" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-brand-gold"></i> 0560 50 90 07
+                </a>
+                <a href="tel:0793988698" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-brand-gold"></i> 0793 98 86 98
+                </a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-brand-gold transition ml-2">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- LOGO -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-brand-gold to-yellow-700 flex items-center justify-center font-title text-black font-black text-2xl shadow-lg shadow-brand-gold/10 group-hover:scale-105 transition duration-300">
+                    GTB
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-title text-xl font-bold tracking-wider text-white group-hover:text-brand-gold transition">GTB AUTO</span>
+                    <span class="text-[10px] tracking-widest text-brand-gold uppercase font-semibold">Automobile Douéra</span>
+                </div>
+            </a>
+
+            <!-- NAVIGATION LINKS -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#accueil" class="text-white hover:text-brand-gold transition py-1 border-b-2 border-brand-gold">Accueil</a>
+                <a href="#stock" class="text-brand-gray hover:text-brand-gold transition py-1 border-b-2 border-transparent hover:border-brand-gold">Stock Véhicules</a>
+                <a href="#services" class="text-brand-gray hover:text-brand-gold transition py-1 border-b-2 border-transparent hover:border-brand-gold">Nos Services</a>
+                <a href="#estimation" class="text-brand-gray hover:text-brand-gold transition py-1 border-b-2 border-transparent hover:border-brand-gold">Estimation & Reprise</a>
+                <a href="#avis" class="text-brand-gray hover:text-brand-gold transition py-1 border-b-2 border-transparent hover:border-brand-gold">Avis Clients</a>
+                <a href="#contact" class="text-brand-gray hover:text-brand-gold transition py-1 border-b-2 border-transparent hover:border-brand-gold">Contact</a>
+            </nav>
+
+            <!-- CTA BUTTONS -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="https://wa.me/213560509007?text=Bonjour%20GTB%20Auto,%20je%20souhaite%20des%20informations." target="_blank" class="px-4 py-2.5 rounded-lg bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-600 hover:text-white text-xs font-semibold uppercase tracking-wider transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                </a>
+                <a href="tel:0560509007" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-gold to-yellow-600 hover:from-yellow-500 hover:to-brand-gold text-black font-semibold text-xs uppercase tracking-wider transition shadow-lg shadow-brand-gold/20 flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Appeler
+                </a>
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button id="mobileMenuBtn" class="md:hidden p-2 text-brand-gray hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE NAV DROPDOWN -->
+        <div id="mobileMenu" class="hidden md:hidden glass-panel border-t border-white/10 px-6 py-6 space-y-4">
+            <a href="#accueil" class="mobile-link block text-white font-medium hover:text-brand-gold">Accueil</a>
+            <a href="#stock" class="mobile-link block text-brand-gray font-medium hover:text-brand-gold">Stock Véhicules</a>
+            <a href="#services" class="mobile-link block text-brand-gray font-medium hover:text-brand-gold">Nos Services</a>
+            <a href="#estimation" class="mobile-link block text-brand-gray font-medium hover:text-brand-gold">Estimation & Reprise</a>
+            <a href="#avis" class="mobile-link block text-brand-gray font-medium hover:text-brand-gold">Avis Clients</a>
+            <a href="#contact" class="mobile-link block text-brand-gray font-medium hover:text-brand-gold">Contact & Localisation</a>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="https://wa.me/213560509007" target="_blank" class="w-full text-center py-3 rounded-lg bg-emerald-600 text-white font-semibold text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Contacter sur WhatsApp
+                </a>
+                <a href="tel:0560509007" class="w-full text-center py-3 rounded-lg bg-brand-gold text-black font-semibold text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> 0560 50 90 07
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="relative min-h-[85vh] flex items-center justify-center pt-8 pb-16 px-4 overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=2000&q=80" alt="Supercar Luxury GTB Auto Highway" class="w-full h-full object-cover object-center opacity-40 scale-105 transition duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/70 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-black via-transparent to-brand-black"></div>
+        </div>
+
+        <div class="relative z-10 max-w-6xl mx-auto text-center space-y-8">
+            <!-- Badge Top -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-brand-gold/30 text-xs sm:text-sm text-brand-gold font-medium uppercase tracking-widest animate-bounce">
+                <i class="fa-solid fa-shield-halved text-brand-gold"></i>
+                <span>Le Spécialiste Automobile de Confiance à Douéra</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="font-title text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+                L'Excellence Automobile <br>
+                <span class="text-gold-gradient">Neuf, Occasion & Échange</span>
+            </h1>
+
+            <!-- Subtitle Arabic / French -->
+            <p class="max-w-3xl mx-auto text-base sm:text-xl text-brand-gray font-light leading-relaxed">
+                Achat, Vente et Échange de véhicules sélectionnés avec rigueur. Bénéficiez d'un accompagnement personnalisé, d'une transparence totale et d'une sécurité garantie à 100%.
+            </p>
+            <p class="text-brand-gold text-sm sm:text-base font-semibold dir-rtl tracking-wide">
+                بيع، شراء و تبادل السيارات الجديدة و المستعملة بأفضل الأسعار في دويرة، الجزائر
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#stock" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-gold to-yellow-600 hover:from-yellow-500 hover:to-brand-gold text-black font-bold text-sm uppercase tracking-wider transition duration-300 shadow-xl shadow-brand-gold/20 flex items-center justify-center gap-3 group">
+                    <span>Explorer Le Stock</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                </a>
+                <a href="#estimation" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-panel text-white hover:text-brand-gold border border-white/10 hover:border-brand-gold/50 font-semibold text-sm uppercase tracking-wider transition duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-calculator text-brand-gold"></i>
+                    <span>Estimer Mon Véhicule</span>
+                </a>
+            </div>
+
+            <!-- TRUST BADGES GRID -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-10 border-t border-white/10 max-w-4xl mx-auto">
+                <div class="glass-panel p-4 rounded-xl text-center">
+                    <div class="text-2xl sm:text-3xl font-bold font-title text-brand-gold">+131K</div>
+                    <div class="text-xs text-brand-gray mt-1 font-medium">Abonnés Facebook</div>
+                </div>
+                <div class="glass-panel p-4 rounded-xl text-center">
+                    <div class="text-2xl sm:text-3xl font-bold font-title text-brand-gold flex items-center justify-center gap-1">
+                        4.3 <i class="fa-solid fa-star text-amber-400 text-lg"></i>
+                    </div>
+                    <div class="text-xs text-brand-gray mt-1 font-medium">Note Clients Google</div>
+                </div>
+                <div class="glass-panel p-4 rounded-xl text-center">
+                    <div class="text-2xl sm:text-3xl font-bold font-title text-brand-gold">10/10</div>
+                    <div class="text-xs text-brand-gray mt-1 font-medium">Sécurité & Transparence</div>
+                </div>
+                <div class="glass-panel p-4 rounded-xl text-center">
+                    <div class="text-2xl sm:text-3xl font-bold font-title text-brand-gold">24/7</div>
+                    <div class="text-xs text-brand-gray mt-1 font-medium">Service Continu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH & SHOWROOM STOCK SECTION -->
+    <section id="stock" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div>
+                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Showroom Virtuel</span>
+                <h2 class="font-title text-3xl sm:text-4xl font-bold text-white mt-1">Nos Véhicules Disponibles</h2>
+                <p class="text-brand-gray text-sm mt-2">Découvrez notre sélection rigoureuse inspectée et prête à la livraison.</p>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="relative min-w-[280px]">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-brand-gray"></i>
+                <input type="text" id="searchInput" placeholder="Rechercher une marque, un modèle..." class="w-full bg-brand-dark border border-brand-border rounded-xl py-3 pl-11 pr-4 text-sm text-white placeholder-brand-gray focus:outline-none focus:border-brand-gold transition">
+            </div>
+        </div>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 hide-scrollbar">
+            <button class="filter-btn active px-5 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider whitespace-nowrap bg-brand-gold text-black transition" data-filter="all">Tous nos véhicules</button>
+            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider whitespace-nowrap glass-panel text-brand-gray hover:text-white border border-white/5 transition" data-filter="neuf">Véhicules Neufs</button>
+            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider whitespace-nowrap glass-panel text-brand-gray hover:text-white border border-white/5 transition" data-filter="occasion">Occasions Certifiées</button>
+            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider whitespace-nowrap glass-panel text-brand-gray hover:text-white border border-white/5 transition" data-filter="suv">SUV & Crossover</button>
+            <button class="filter-btn px-5 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider whitespace-nowrap glass-panel text-brand-gray hover:text-white border border-white/5 transition" data-filter="berline">Berlines & Citadines</button>
+        </div>
+
+        <!-- CARS GRID -->
+        <div id="carsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- CAR CARD 1 -->
+            <div class="car-card glass-panel rounded-2xl overflow-hidden hover:border-brand-gold/50 transition duration-300 group flex flex-col" data-category="neuf berline" data-name="skoda fabia monte carlo 1.0 tsi">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" alt="Skoda Fabia Monte Carlo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-brand-gold text-black font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                        Neuf - Disponible
+                    </div>
+                    <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg border border-white/10">
+                        2023
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-1">Skoda</div>
+                        <h3 class="font-title text-xl font-bold text-white group-hover:text-brand-gold transition">Fabia Monte Carlo</h3>
+                        <p class="text-xs text-brand-gray mt-1">1.0 TSI 110ch DSG7 - Pack Sport Luxury</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/5 text-center text-xs text-brand-gray">
+                        <div>
+                            <i class="fa-solid fa-gauge text-brand-gold block mb-1"></i>
+                            <span>0 km</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gears text-brand-gold block mb-1"></i>
+                            <span>Automatique</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gas-pump text-brand-gold block mb-1"></i>
+                            <span>Essence</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-gray block">Prix GTB Auto</span>
+                            <span class="text-lg font-bold text-white">Sur Demande</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openCarModal('Skoda Fabia Monte Carlo 2023', 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80', '0 km', 'Automatique DSG7', 'Essence 1.0 TSI', 'Rouge / Toit Noir', 'Garantie Constructeur + Révisé', 'Sur Demande')" class="p-2.5 rounded-lg bg-brand-dark border border-white/10 hover:border-brand-gold text-white hover:text-brand-gold transition" title="Détails">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/213560509007?text=Bonjour%20GTB%20Auto,%20je%20suis%20intéressé%20par%20la%20Skoda%20Fabia%20Monte%20Carlo." target="_blank" class="px-3.5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-md">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Info WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAR CARD 2 -->
+            <div class="car-card glass-panel rounded-2xl overflow-hidden hover:border-brand-gold/50 transition duration-300 group flex flex-col" data-category="occasion berline" data-name="volkswagen golf 8 r-line">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Golf 8 R Line" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-emerald-500 text-white font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                        Occasion Révisée
+                    </div>
+                    <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg border border-white/10">
+                        2022
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-1">Volkswagen</div>
+                        <h3 class="font-title text-xl font-bold text-white group-hover:text-brand-gold transition">Golf 8 R-Line</h3>
+                        <p class="text-xs text-brand-gray mt-1">2.0 TDI 150ch - Matrix LED & Toit Panoramique</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/5 text-center text-xs text-brand-gray">
+                        <div>
+                            <i class="fa-solid fa-gauge text-brand-gold block mb-1"></i>
+                            <span>38 000 km</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gears text-brand-gold block mb-1"></i>
+                            <span>Automatique</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gas-pump text-brand-gold block mb-1"></i>
+                            <span>Diesel</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-gray block">Prix GTB Auto</span>
+                            <span class="text-lg font-bold text-white">Sur Demande</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openCarModal('Volkswagen Golf 8 R-Line 2022', 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80', '38 000 km', 'DSG7', '2.0 TDI Diesel', 'Gris Nardo', 'État Neuf - Carnet complet', 'Sur Demande')" class="p-2.5 rounded-lg bg-brand-dark border border-white/10 hover:border-brand-gold text-white hover:text-brand-gold transition" title="Détails">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/213560509007?text=Bonjour%20GTB%20Auto,%20je%20souhaite%20des%20infos%20sur%20la%20Golf%208%20R-Line." target="_blank" class="px-3.5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-md">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Info WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAR CARD 3 -->
+            <div class="car-card glass-panel rounded-2xl overflow-hidden hover:border-brand-gold/50 transition duration-300 group flex flex-col" data-category="neuf suv" data-name="range rover velar autobiography">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="Range Rover Velar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-brand-gold text-black font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                        Neuf 00km
+                    </div>
+                    <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg border border-white/10">
+                        2024
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-1">Range Rover</div>
+                        <h3 class="font-title text-xl font-bold text-white group-hover:text-brand-gold transition">Velar Autobiography</h3>
+                        <p class="text-xs text-brand-gray mt-1">2.0 P250 AWD - Full Options Black Edition</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/5 text-center text-xs text-brand-gray">
+                        <div>
+                            <i class="fa-solid fa-gauge text-brand-gold block mb-1"></i>
+                            <span>0 km</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gears text-brand-gold block mb-1"></i>
+                            <span>Automatique</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gas-pump text-brand-gold block mb-1"></i>
+                            <span>Essence</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-gray block">Prix GTB Auto</span>
+                            <span class="text-lg font-bold text-white">Sur Demande</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openCarModal('Range Rover Velar Autobiography 2024', 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80', '0 km', 'BVA8 AWD', '2.0 Turbo 250ch', 'Noir Santorin', 'Garantie constructeur complète', 'Sur Demande')" class="p-2.5 rounded-lg bg-brand-dark border border-white/10 hover:border-brand-gold text-white hover:text-brand-gold transition" title="Détails">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/213560509007?text=Bonjour%20GTB%20Auto,%20je%20souhaite%20des%20infos%20sur%20le%20Range%20Rover%20Velar." target="_blank" class="px-3.5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-md">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Info WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAR CARD 4 -->
+            <div class="car-card glass-panel rounded-2xl overflow-hidden hover:border-brand-gold/50 transition duration-300 group flex flex-col" data-category="occasion suv" data-name="cupra formentor vz">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Cupra Formentor" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-emerald-500 text-white font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                        Occasion Premium
+                    </div>
+                    <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg border border-white/10">
+                        2022
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-1">Cupra</div>
+                        <h3 class="font-title text-xl font-bold text-white group-hover:text-brand-gold transition">Formentor VZ</h3>
+                        <p class="text-xs text-brand-gray mt-1">2.0 TSI 310ch 4Drive - Sièges Baquets Brembo</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/5 text-center text-xs text-brand-gray">
+                        <div>
+                            <i class="fa-solid fa-gauge text-brand-gold block mb-1"></i>
+                            <span>24 500 km</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gears text-brand-gold block mb-1"></i>
+                            <span>DSG7</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gas-pump text-brand-gold block mb-1"></i>
+                            <span>Essence</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-gray block">Prix GTB Auto</span>
+                            <span class="text-lg font-bold text-white">Sur Demande</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openCarModal('Cupra Formentor VZ 310ch', 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80', '24 500 km', 'DSG7 4Drive', '2.0 TSI 310ch', 'Gris Mat Petrol', 'État irreprochable 10/10', 'Sur Demande')" class="p-2.5 rounded-lg bg-brand-dark border border-white/10 hover:border-brand-gold text-white hover:text-brand-gold transition" title="Détails">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/213560509007?text=Bonjour%20GTB%20Auto,%20je%20souhaite%20des%20infos%20sur%20la%20Cupra%20Formentor." target="_blank" class="px-3.5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-md">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Info WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAR CARD 5 -->
+            <div class="car-card glass-panel rounded-2xl overflow-hidden hover:border-brand-gold/50 transition duration-300 group flex flex-col" data-category="neuf berline" data-name="porsche 911 carrera s">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80" alt="Porsche 911 Carrera S" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-brand-gold text-black font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                        Neuf 2024
+                    </div>
+                    <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg border border-white/10">
+                        2024
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-1">Porsche</div>
+                        <h3 class="font-title text-xl font-bold text-white group-hover:text-brand-gold transition">911 Carrera S</h3>
+                        <p class="text-xs text-brand-gray mt-1">3.0 Flat-6 Twin-Turbo 450ch - PDK 8</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/5 text-center text-xs text-brand-gray">
+                        <div>
+                            <i class="fa-solid fa-gauge text-brand-gold block mb-1"></i>
+                            <span>0 km</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gears text-brand-gold block mb-1"></i>
+                            <span>PDK Auto</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gas-pump text-brand-gold block mb-1"></i>
+                            <span>Essence</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-gray block">Prix GTB Auto</span>
+                            <span class="text-lg font-bold text-white">Sur Demande</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openCarModal('Porsche 911 Carrera S 2024', 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80', '0 km', 'PDK 8', '3.0 Flat-6 450ch', 'Gris Craie', 'Véhicule d’exception disponible sur commande/stock', 'Sur Demande')" class="p-2.5 rounded-lg bg-brand-dark border border-white/10 hover:border-brand-gold text-white hover:text-brand-gold transition" title="Détails">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/213560509007?text=Bonjour%20GTB%20Auto,%20je%20souhaite%20des%20infos%20sur%20la%20Porsche%20911." target="_blank" class="px-3.5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-md">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Info WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAR CARD 6 -->
+            <div class="car-card glass-panel rounded-2xl overflow-hidden hover:border-brand-gold/50 transition duration-300 group flex flex-col" data-category="occasion berline" data-name="audi rs3 sedan">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80" alt="Audi RS3 Sedan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-3 left-3 bg-emerald-500 text-white font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                        Occasion Certifiée
+                    </div>
+                    <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-lg border border-white/10">
+                        2022
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="text-xs text-brand-gold font-semibold uppercase tracking-wider mb-1">Audi Sport</div>
+                        <h3 class="font-title text-xl font-bold text-white group-hover:text-brand-gold transition">RS3 Sedan Quattro</h3>
+                        <p class="text-xs text-brand-gray mt-1">2.5 TFSI 400ch - Echappement RS & Bang & Olufsen</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/5 text-center text-xs text-brand-gray">
+                        <div>
+                            <i class="fa-solid fa-gauge text-brand-gold block mb-1"></i>
+                            <span>18 000 km</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gears text-brand-gold block mb-1"></i>
+                            <span>S-Tronic 7</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gas-pump text-brand-gold block mb-1"></i>
+                            <span>Essence</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <div>
+                            <span class="text-[10px] uppercase text-brand-gray block">Prix GTB Auto</span>
+                            <span class="text-lg font-bold text-white">Sur Demande</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openCarModal('Audi RS3 Sedan Quattro', 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80', '18 000 km', 'S-Tronic 7 Quattro', '2.5 TFSI 400ch', 'Gris Kemora', 'Carnet d'entretien complet Audi', 'Sur Demande')" class="p-2.5 rounded-lg bg-brand-dark border border-white/10 hover:border-brand-gold text-white hover:text-brand-gold transition" title="Détails">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/213560509007?text=Bonjour%20GTB%20Auto,%20je%20souhaite%20des%20infos%20sur%20l%27Audi%20RS3." target="_blank" class="px-3.5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-md">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Info WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-brand-dark border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Nos Piliers de Service</span>
+                <h2 class="font-title text-3xl sm:text-4xl font-bold text-white">Pourquoi Choisir GTB Auto ?</h2>
+                <p class="text-brand-gray text-sm">Une expertise automobile globale à Douéra basée sur la sécurité juridico-technique et l'excellence de service.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-brand-gold/40 transition duration-300 relative group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                    </div>
+                    <h3 class="font-title text-xl font-bold text-white mb-3">Achat Cash Immédiat</h3>
+                    <p class="text-xs text-brand-gray leading-relaxed">
+                        Nous rachetons votre véhicule comptant au meilleur prix du marché après expertise rapide sans démarche compliquée.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-brand-gold/40 transition duration-300 relative group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h3 class="font-title text-xl font-bold text-white mb-3">Vente Neuf & Occasion</h3>
+                    <p class="text-xs text-brand-gray leading-relaxed">
+                        Chaque véhicule mis en vente subit une vérification sur plus de 100 points de contrôle mécaniques et esthétiques.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-brand-gold/40 transition duration-300 relative group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <h3 class="font-title text-xl font-bold text-white mb-3">Échange & Reprise</h3>
+                    <p class="text-xs text-brand-gray leading-relaxed">
+                        Échangez votre véhicule actuel contre un modèle récent de notre showroom avec rajout de soulte sur-mesure.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-brand-gold/40 transition duration-300 relative group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <h3 class="font-title text-xl font-bold text-white mb-3">Vérification & Papier</h3>
+                    <p class="text-xs text-brand-gray leading-relaxed">
+                        Accompagnement complet pour les démarches administratives, contrôle des dossiers et sécurité de transaction 10/10.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTIMATION & TRADE-IN CALCULATOR FORM SECTION -->
+    <section id="estimation" class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-brand-gold/20 relative overflow-hidden">
+            <div class="absolute -right-20 -top-20 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Estimation Gratuite</span>
+                    <h2 class="font-title text-2xl sm:text-3xl font-bold text-white">Vous souhaitez vendre ou échanger votre voiture ?</h2>
+                    <p class="text-brand-gray text-xs sm:text-sm leading-relaxed">
+                        Remplissez ces informations simples. Notre équipe GTB Auto étudiera votre véhicule et vous recontactera avec une offre de rachat cash ou d'échange dans les plus brefs délais.
+                    </p>
+                    <div class="pt-2 space-y-2 text-xs text-white">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Estimation rapide & sans engagement</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Paiement cash ou virement sécurisé</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Déplacement possible à Douéra et environs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-brand-dark/80 p-6 sm:p-8 rounded-2xl border border-white/5 space-y-4">
+                    <form id="estimationForm" onsubmit="submitEstimation(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[11px] uppercase tracking-wider text-brand-gray block mb-1">Marque & Modèle *</label>
+                                <input type="text" id="estMarque" required placeholder="ex: Golf 7 / Tucson" class="w-full bg-brand-card border border-brand-border rounded-xl py-2.5 px-3.5 text-xs text-white focus:border-brand-gold focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-[11px] uppercase tracking-wider text-brand-gray block mb-1">Année *</label>
+                                <input type="number" id="estAnnee" required placeholder="ex: 2020" class="w-full bg-brand-card border border-brand-border rounded-xl py-2.5 px-3.5 text-xs text-white focus:border-brand-gold focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[11px] uppercase tracking-wider text-brand-gray block mb-1">Kilométrage</label>
+                                <input type="text" id="estKm" placeholder="ex: 85 000 km" class="w-full bg-brand-card border border-brand-border rounded-xl py-2.5 px-3.5 text-xs text-white focus:border-brand-gold focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-[11px] uppercase tracking-wider text-brand-gray block mb-1">Type de projet *</label>
+                                <select id="estProjet" required class="w-full bg-brand-card border border-brand-border rounded-xl py-2.5 px-3.5 text-xs text-white focus:border-brand-gold focus:outline-none">
+                                    <option value="Vente Cash Directe">Vente Cash Directe</option>
+                                    <option value="Échange / Reprise">Échange / Reprise avec nouveau véhicule</option>
+                                    <option value="Simple demande de valeur">Simple évaluation</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[11px] uppercase tracking-wider text-brand-gray block mb-1">Votre Nom *</label>
+                                <input type="text" id="estNom" required placeholder="Votre nom complet" class="w-full bg-brand-card border border-brand-border rounded-xl py-2.5 px-3.5 text-xs text-white focus:border-brand-gold focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-[11px] uppercase tracking-wider text-brand-gray block mb-1">Numéro Téléphone / WhatsApp *</label>
+                                <input type="tel" id="estPhone" required placeholder="05XX XX XX XX" class="w-full bg-brand-card border border-brand-border rounded-xl py-2.5 px-3.5 text-xs text-white focus:border-brand-gold focus:outline-none">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-gold to-yellow-600 hover:from-yellow-500 hover:to-brand-gold text-black font-bold text-xs uppercase tracking-wider transition duration-300 shadow-lg shadow-brand-gold/20 flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Envoyer sur WhatsApp GTB
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS & SOCIAL PROOF -->
+    <section id="avis" class="py-20 px-4 max-w-7xl mx-auto border-t border-white/5">
+        <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Avis Vérifiés</span>
+            <h2 class="font-title text-3xl sm:text-4xl font-bold text-white">Ce Que Disent Nos Clients</h2>
+            <p class="text-brand-gray text-sm">Basé sur nos avis Google (4.3/5) et notre communauté Facebook de plus de 131,000 abonnés.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Review 1 -->
+            <div class="glass-panel p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-300 italic leading-relaxed">
+                        "J'ai acheté ma Golf chez GTB Auto Douéra. Service irréprochable, transparence totale sur le véhicule et transaction sécurisée à 100%. Une équipe très professionnelle que je recommande vivement !"
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+                    <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center font-bold text-sm">
+                        K.M
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-white">Karim M.</div>
+                        <div class="text-[10px] text-brand-gray">Client Douéra • Avis Google</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="glass-panel p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-300 italic leading-relaxed">
+                        "Échange de mon ancien véhicule fait dans la même journée sans aucun souci. Évaluation honnête et rajout de soulte très raisonnable. Confiance absolue avec GTB Automobile."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+                    <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center font-bold text-sm">
+                        S.B
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-white">Sofiane B.</div>
+                        <div class="text-[10px] text-brand-gray">Client Alger • Avis Facebook</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="glass-panel p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-300 italic leading-relaxed">
+                        "ناس ملاح و معاملة في المستوى. Véhicule 00km conforme en tout point. Le meilleur showroom à Douéra pour acheter en toute sérénité."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+                    <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center font-bold text-sm">
+                        A.R
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-white">Amine R.</div>
+                        <div class="text-[10px] text-brand-gray">Client Vérifié • Google Review</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT, LOCATION & MAP SECTION -->
+    <section id="contact" class="py-20 bg-brand-dark border-t border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- CONTACT INFOS -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Nous Trouver</span>
+                        <h2 class="font-title text-3xl font-bold text-white mt-1">Concession GTB Auto</h2>
+                        <p class="text-brand-gray text-xs sm:text-sm mt-2">
+                            Situés au cœur de Douéra (Alger), nous vous accueillons dans notre showroom 24h/24 et 7j/7.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Phone 1 -->
+                        <a href="tel:0560509007" class="glass-panel p-4 rounded-xl flex items-center gap-4 hover:border-brand-gold transition group">
+                            <div class="w-11 h-11 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] uppercase text-brand-gray">Téléphone / WhatsApp Principal</div>
+                                <div class="text-sm font-bold text-white group-hover:text-brand-gold transition">0560 50 90 07</div>
+                            </div>
+                        </a>
+
+                        <!-- Phone 2 -->
+                        <a href="tel:0793988698" class="glass-panel p-4 rounded-xl flex items-center gap-4 hover:border-brand-gold transition group">
+                            <div class="w-11 h-11 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] uppercase text-brand-gray">Téléphone Secondaire</div>
+                                <div class="text-sm font-bold text-white group-hover:text-brand-gold transition">0793 98 86 98</div>
+                            </div>
+                        </a>
+
+                        <!-- Address -->
+                        <div class="glass-panel p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-11 h-11 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] uppercase text-brand-gray">Adresse Showroom</div>
+                                <div class="text-sm font-bold text-white">Douéra, Wilaya d'Alger, Algérie</div>
+                                <div class="text-[11px] text-brand-gold mt-0.5">Plus Code: MX62+QGC Douéra</div>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="glass-panel p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-11 h-11 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] uppercase text-brand-gray">Horaires d'Ouverture</div>
+                                <div class="text-sm font-bold text-white">Ouvert 24h/24 - 7 jours sur 7</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=MX62%2BQGC+Douéra" target="_blank" class="w-full py-3.5 rounded-xl bg-brand-gold text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-yellow-500 transition shadow-lg">
+                        <i class="fa-solid fa-route"></i> Lancer l'itinéraire Google Maps
+                    </a>
+                </div>
+
+                <!-- MAP EMBED -->
+                <div class="lg:col-span-7 h-[480px] rounded-2xl overflow-hidden glass-panel border border-brand-gold/20 relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12812.87192276527!2d3.003!3d36.671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128faf601f016335%3A0x1c21e64bf87034b0!2sDou%C3%A9ra!5e0!3m2!1sfr!2sdz!4v1700000000000!5m2!1sfr!2sdz" class="w-full h-full border-0 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition duration-500" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-black border-t border-white/10 pt-12 pb-8 px-4 text-xs text-brand-gray">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-4 md:col-span-1">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-brand-gold flex items-center justify-center font-title text-black font-bold text-lg">GTB</div>
+                    <span class="font-title text-lg font-bold text-white">GTB AUTO</span>
+                </div>
+                <p class="leading-relaxed">
+                    Votre partenaire automobile de référence à Douéra (Alger). Achat, vente et échange de véhicules neufs et d'occasion en toute transparence.
+                </p>
+                <div class="flex items-center gap-3 pt-2">
+                    <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-lg bg-brand-card flex items-center justify-center text-white hover:text-brand-gold border border-white/5 hover:border-brand-gold transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/213560509007" target="_blank" class="w-8 h-8 rounded-lg bg-brand-card flex items-center justify-center text-white hover:text-emerald-400 border border-white/5 hover:border-emerald-500 transition">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-title text-white font-bold mb-4 uppercase tracking-wider text-xs">Liens Rapides</h4>
+                <ul class="space-y-2">
+                    <li><a href="#accueil" class="hover:text-brand-gold transition">Accueil</a></li>
+                    <li><a href="#stock" class="hover:text-brand-gold transition">Stock de véhicules</a></li>
+                    <li><a href="#services" class="hover:text-brand-gold transition">Nos Prestations</a></li>
+                    <li><a href="#estimation" class="hover:text-brand-gold transition">Estimer un véhicule</a></li>
+                    <li><a href="#contact" class="hover:text-brand-gold transition">Localisation & Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-title text-white font-bold mb-4 uppercase tracking-wider text-xs">Nos Engagements</h4>
+                <ul class="space-y-2">
+                    <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Transparence administrative</li>
+                    <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Contrôle mécanique rigoureux</li>
+                    <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Rachat cash immédiat</li>
+                    <li><i class="fa-solid fa-check text-brand-gold mr-1.5"></i> Disponibilité 24h/24</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-title text-white font-bold mb-4 uppercase tracking-wider text-xs">Douéra, Alger</h4>
+                <p class="leading-relaxed mb-3">
+                    Douéra, Wilaya d'Alger, Algérie<br>
+                    Tél : 0560 50 90 07 / 0793 98 86 98
+                </p>
+                <div class="text-[11px] text-brand-gold font-semibold">
+                    Note Google : 4.3 / 5 ★ (Avis clients vérifiés)
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+            <div>© <span id="year"></span> GTB Auto (GTB Automobile Douéra). Tous droits réservés.</div>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition">Mentions Légales</a>
+                <span>•</span>
+                <a href="#" class="hover:text-white transition">Politique de Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL CAR DETAILS -->
+    <div id="carModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-panel max-w-2xl w-full rounded-3xl overflow-hidden border border-brand-gold/30 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeCarModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/60 text-white hover:text-brand-gold flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="relative h-64 sm:h-72">
+                <img id="modalImg" src="" alt="Vehicule GTB Auto" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+            </div>
+
+            <div class="p-6 sm:p-8 space-y-6">
+                <div>
+                    <span id="modalPrix" class="text-brand-gold font-bold text-sm block"></span>
+                    <h3 id="modalTitle" class="font-title text-2xl sm:text-3xl font-bold text-white mt-1"></h3>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-brand-dark p-4 rounded-xl text-center text-xs">
+                    <div>
+                        <span class="text-brand-gray block text-[10px] uppercase">Kilométrage</span>
+                        <span id="modalKm" class="font-semibold text-white"></span>
+                    </div>
+                    <div>
+                        <span class="text-brand-gray block text-[10px] uppercase">Boîte</span>
+                        <span id="modalBoite" class="font-semibold text-white"></span>
+                    </div>
+                    <div>
+                        <span class="text-brand-gray block text-[10px] uppercase">Moteur</span>
+                        <span id="modalMoteur" class="font-semibold text-white"></span>
+                    </div>
+                    <div>
+                        <span class="text-brand-gray block text-[10px] uppercase">Couleur</span>
+                        <span id="modalCouleur" class="font-semibold text-white"></span>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="text-xs font-bold uppercase text-brand-gold tracking-wider">État & Garanties</h4>
+                    <p id="modalGarantie" class="text-xs text-brand-gray leading-relaxed"></p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-white/10">
+                    <a id="modalWaBtn" href="#" target="_blank" class="flex-1 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i> Réserver via WhatsApp
+                    </a>
+                    <a href="tel:0560509007" class="px-6 py-3.5 rounded-xl bg-brand-gold text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-yellow-500 transition">
+                        <i class="fa-solid fa-phone"></i> Appeler
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Vehicle Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const carCards = document.querySelectorAll('.car-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-gold', 'text-black', 'active');
+                    b.classList.add('glass-panel', 'text-brand-gray');
+                });
+                btn.classList.add('bg-brand-gold', 'text-black', 'active');
+                btn.classList.remove('glass-panel', 'text-brand-gray');
+
+                const filter = btn.getAttribute('data-filter');
+
+                carCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Instant Text Search
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            carCards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Modal Vehicle Details Logic
+        function openCarModal(title, img, km, boite, moteur, couleur, garantie, prix) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalImg').src = img;
+            document.getElementById('modalKm').textContent = km;
+            document.getElementById('modalBoite').textContent = boite;
+            document.getElementById('modalMoteur').textContent = moteur;
+            document.getElementById('modalCouleur').textContent = couleur;
+            document.getElementById('modalGarantie').textContent = garantie;
+            document.getElementById('modalPrix').textContent = "Statut: " + prix;
+
+            const waMsg = encodeURIComponent(`Bonjour GTB Auto Douéra, je souhaite plus de détails concernant le véhicule : ${title}`);
+            document.getElementById('modalWaBtn').href = `https://wa.me/213560509007?text=${waMsg}`;
+
+            const modal = document.getElementById('carModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCarModal() {
+            const modal = document.getElementById('carModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Close Modal when clicking outside content
+        document.getElementById('carModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCarModal();
+            }
+        });
+
+        // Estimation Form Handler -> Direct WhatsApp redirect
+        function submitEstimation(e) {
+            e.preventDefault();
+            const marque = document.getElementById('estMarque').value;
+            const annee = document.getElementById('estAnnee').value;
+            const km = document.getElementById('estKm').value;
+            const projet = document.getElementById('estProjet').value;
+            const nom = document.getElementById('estNom').value;
+            const phone = document.getElementById('estPhone').value;
+
+            const text = `Bonjour GTB Auto Douéra,%0A%0AJe souhaite une estimation/reprise de mon véhicule :%0A- *Marque & Modèle* : ${marque}%0A- *Année* : ${annee}%0A- *Kilométrage* : ${km}%0A- *Projet* : ${projet}%0A%0A*Coordonnées :*%0A- *Nom* : ${nom}%0A- *Tél* : ${phone}`;
+
+            window.open(`https://wa.me/213560509007?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
